@@ -18,7 +18,7 @@ export class ConvertorService {
     oz: 28349.5, // унция
     lb: 453592, // фунт
   };
-
+// Hello world!
   convertWeight(value: number, from: string, to: string): number {
     if (!this.weightUnits[from] || !this.weightUnits[to]) {
       throw new BadRequestException('Invalid weight unit');
